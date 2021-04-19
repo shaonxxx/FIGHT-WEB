@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.115.11.133:8848
+        namespace: cd2001e2-971b-4b64-baee-79b5bf9ccc63 #开发环境
+      config:
+        server-addr: 47.115.11.133:8848
+        namespace: cd2001e2-971b-4b64-baee-79b5bf9ccc63 #开发环境
+        group: DEFAULT_GROUP #默认配置组
+        file-extension: yaml
