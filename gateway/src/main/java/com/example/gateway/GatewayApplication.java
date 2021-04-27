@@ -21,6 +21,10 @@ public class GatewayApplication {
                         .path("/customerUser/getUser")
                         .filters(f -> f.addRequestHeader("Hello", "World"))
                         .uri("http://localhost:56010"))
+                .route(p -> p
+                        .host("*.hystrix.com")
+                        .filters(f -> f.hystrix(config -> config.setName("mycmd")))
+                        .uri("http://httpbin.org:80"))
                 .build();
     }
 

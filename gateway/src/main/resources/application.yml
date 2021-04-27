@@ -1,0 +1,6 @@
+
+server:
+  port: 56012
+spring:
+  application:
+    name: gateway
